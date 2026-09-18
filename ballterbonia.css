@@ -1,97 +1,314 @@
+	* {
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+	html{
+		scroll-behavior:smooth;
+	}
 	body{
 	  margin:0;
-	  font-family:Garamond, serif;
-	  background-color:#ABABAB;
+	  font-family:Arial, sans-serif;
+	  background:#171717;
+	  color:white;
 	}
 	
 	nav{
-		background-color:#1E1566;
-		padding:15px;
-	}
-	nav ul{
-		list-style:none;
+		background:#f0b323;
 		display:flex;
-		justify-content:center;
-		gap:30px;
-		margin:0;
-		padding:0;
+		align-items:center;
+		justify-content:space-between;
+		padding:18px 8%;
+		position:sticky;
+		top:0;
+		z-index:100;
 	}
-	nav li{
-		display:inline-block;
-	}
-	nav a{
-		color:white;
-		text-decoration:none;
-		font-family:Arial, sans-serif;
-		font-size:20px;
+	.logo {
+		font-size:25px;
 		font-weight:bold;
-		padding:12px 25px;
-		border-radius:8px;
-		display:block;
-	}
-	nav a:hover{
-		background-color:#0C0357;
+		color:#222;
 	}
 	
-	.clert{
-		background-color:#FFC4E6;
-		color:black;
-		text-align:center;
-		padding:30px;
-	}
-	.clert h1{
-		margin:10;
-		font-size:45px;
-		font-family:
-	}
-	.clert p{
-		font-size:18px;
-	}
-	.rene{
-		background-color:#FFD6D6;
-		padding:10px;
-	}
-	.rene ul{
-		list-style-type:none;
-		margin:0;
-		padding:0;
-	}
-	.rene li{
-		display:inline-block;
-		color:white;
-		font-weight:blod;
-		padding:15px 25px;
-		font-family:Arial Black;
-	}
-	.bater{
-		width:80%;
-		margin:30px auto;
-		background-color:D4D4D4;
-		padding:30px;
-		border-radius:10px;
-		font-family:Garamond, serif;
-	}
-	.bater h2{
-		color:#AD2DB3;
-	.bonias{
+	.nav-li{
 		display:flex;
-		gap:20px;
+		gap:35px;
+		list-style:none;
 	}
-	.bonia{
-		bakcgound-color:#eeeeee;
-		padding:20px;
-		flex:1;
-		border-radius:10px;
+	
+	.nav-li a{
+		text-decoration:none;
+		color:#222;
+		font-size:20px;
+		font-weight:bold;
+		transition:0.3s;
 	}
-	.bonia h3{
-		color:red;
-		font-family:impact;
-	}
-	.ballterbonia{
-		background-color:black;
+	.nav-li a:hover{
 		color:white;
-		text-align:center;
-		padding:20px;
-		margin-top:30px;
 	}
+	
+	.hero{
+		min-height:500px;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		text-align:left;
+		padding:3px;
+	}
+	background:
+		linear-gradient(rgba(0,0,0,0.65), rbga(0,0,0,0.75)),
+		url("ball.jpg");
+		
+		background-size:cover;
+		background-position:center;
+		
+	}
+	.hero-content {
+		max-width:800px;
+	}
+	.hero h1{
+		font-size:20px;
+		margin-bottom:30;
+		color:#f0b323;
+	}
+	.hero h2{
+		font-size:25px;
+		margin-bottom:10px;
+	}
+	.hero p{
+		font-size:20px;
+		line-height:1.6px;
+		margin-bottom::30px;
+		
+	}
+	.button {
+		display:inline-block;
+		background:f0b323;
+		color:#222;
+		padding:14px 28px;
+		border-radius:8px;
+		text-decoration:none;
+		font-weight:bold;
+		transition:0.3s;
+	}
+	.button:hover{
+		background:white;
+		transform:scale(1.05);
+	}
+	
+	section{
+		padding:70px 8%;
+	}
+	
+	.section-title {
+		text-align:center;
+		font-size:35px;
+		color:#f0b323;
+		margin-bottom:40px;
+	}
+	.welcome{
+		background:#171717;
+	}
+	
+	.intro {
+		text-align:center;
+		max-width:850px;
+		margin:auto;
+	}
+	.intro p{
+		font-size:18px;
+		line-height:1.8;
+		color:#ddd;
+	}
+	
+	.players {
+		background:#202020;
+	}
+	.player-container{
+		display:grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap:25px;
+	}
+	.player-card{
+		background:#292929;
+		border-radius:12px;
+		overflow:hidden;
+		text-align:center;
+		border:1px solid #444;
+		transition:0,3s;
+	}
+	.player-card:hover{
+		transform:translateY(-8px);
+		box-shadow:0 10px 25px rgba(0,0,0,0.5);
+	}
+	.player-card img{
+		width:100%;
+		height:250px;
+		object-fit:cover;
+		display:block;
+	}
+	.player-info {
+		padding:20px;
+	}
+	.player-info h3{
+		color:#f0b323;
+		margin-bottom:8px;
+		font-size:21px;
+	}
+	.player-info p{
+		color#ccc;
+	}
+	.highlights {
+		background:#171717;
+	}
+	.highlight-container{
+		display:grid;
+		grid-template-columns:repeat(3, 1fr);
+		gap:25px;
+	}
+	.highlight{
+		background:#292929;
+		padding:30px;
+		text-align:center;
+		border-radius:12px;
+		border-top:4px solid #f0b323;
+		transition:0.3s;
+	}
+	.highlight:hover{
+		transform:translateY(-5px);
+	}
+	.highlight-icon{
+		font-size:40px;
+		margin-bottom:10px;
+	}
+	.highlight p{
+		color:#ddd;
+	}
+	.why {
+		background:#202020;
+	}
+	.why-content p{
+		font-size:18px;
+		line-height:1,8;
+		color:#ddd;
+	}
+	.objectives{
+		background:#171717;
+		text-align:center;
+	}
+	.objextvices-box{
+		max-width:800px;
+		margin:auto;
+		background:#292929;
+		padding:30px;
+		border-radius:12px;
+		border:1px solid #444;
+	}
+	objectives-box p{
+		font-size:18px;
+		line-height:1.7;
+		color:#ddd;
+	}
+	.contact{
+		background:#f0b323;
+		color:#222;
+		text-align:center;
+	}
+	.contact-content h2{
+		font-size:17px;
+		margin:8px;
+	}
+	.contact-button {
+
+		display: inline-block;
+		margin-top: 20px;
+		background: #222;
+		color: white;
+		padding: 14px 28px;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+
+	.contact-button:hover {
+
+		background: white;
+		color: #222;
+
+	}
+	footer {
+		background: #111;
+		text-align: center;
+		padding: 25px;
+		color:#aaa;
+		line-height:1.8;
+	}
+	
+	@media (max-width: 768px) {
+
+	nav {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.nav-links {
+		gap: 15px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.hero h1 {
+		font-size: 40px;
+	}
+	
+	.hero h2 { 
+		font-size:20px;
+	}
+
+	.hero p {
+		font-size: 16px;
+	}
+
+	.player-container, .highlight-container { 
+		grid-template-columns:1fr;
+	}
+
+	section { 
+		padding:50px 6%;
+	}
+
+	.section-title { 
+		font-size:30px;
+	}
+	.video-section {
+		background:#171717;
+		text-align:center;
+	}
+	.video-container {
+		max-width:900px;
+		margin:auto;
+		background:#000;
+		padding:10px;
+		border-radius:12px;
+	}
+	.video-container video{
+		width:100%;
+		max-height:500px;
+		display:block;
+		border-radius:8px;
+	}
+	.video-description {
+		max-width:700px;
+		margin:25px auto 0; 
+	}
+	.video-description h3 {
+		color:#f0b323;
+		font-size:25px;
+		margin-bottom:10px;
+	}
+	video-description p{
+		color:#ddd;
+		font-size:17px;
+		line-height:1.7;
+	}}
 	
