@@ -1,0 +1,97 @@
+	body{
+	  margin:0;
+	  font-family:Garamond, serif;
+	  background-color:#ABABAB;
+	}
+	
+	nav{
+		background-color:#1E1566;
+		padding:15px;
+	}
+	nav ul{
+		list-style:none;
+		display:flex;
+		justify-content:center;
+		gap:30px;
+		margin:0;
+		padding:0;
+	}
+	nav li{
+		display:inline-block;
+	}
+	nav a{
+		color:white;
+		text-decoration:none;
+		font-family:Arial, sans-serif;
+		font-size:20px;
+		font-weight:bold;
+		padding:12px 25px;
+		border-radius:8px;
+		display:block;
+	}
+	nav a:hover{
+		background-color:#0C0357;
+	}
+	
+	.clert{
+		background-color:#FFC4E6;
+		color:black;
+		text-align:center;
+		padding:30px;
+	}
+	.clert h1{
+		margin:10;
+		font-size:45px;
+		font-family:
+	}
+	.clert p{
+		font-size:18px;
+	}
+	.rene{
+		background-color:#FFD6D6;
+		padding:10px;
+	}
+	.rene ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	}
+	.rene li{
+		display:inline-block;
+		color:white;
+		font-weight:blod;
+		padding:15px 25px;
+		font-family:Arial Black;
+	}
+	.bater{
+		width:80%;
+		margin:30px auto;
+		background-color:D4D4D4;
+		padding:30px;
+		border-radius:10px;
+		font-family:Garamond, serif;
+	}
+	.bater h2{
+		color:#AD2DB3;
+	.bonias{
+		display:flex;
+		gap:20px;
+	}
+	.bonia{
+		bakcgound-color:#eeeeee;
+		padding:20px;
+		flex:1;
+		border-radius:10px;
+	}
+	.bonia h3{
+		color:red;
+		font-family:impact;
+	}
+	.ballterbonia{
+		background-color:black;
+		color:white;
+		text-align:center;
+		padding:20px;
+		margin-top:30px;
+	}
+	
